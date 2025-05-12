@@ -39,4 +39,4 @@ erweiterung 1: am ende können polizisten ihre kollegen bewerten
 
 erweiterung 2: nach feierabend können die polizisten eingeben, wo es sicher ist und wo problembezirke sind
 
-erweiterung 3: 
+erweiterung 3: Adrian: der user gibt die plz und die zugehörige gefahrenstufe ein dan werden die polizisten nach gefahren stufe zu geteilt.
