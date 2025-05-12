@@ -28,9 +28,12 @@ programmplan:
 1. liste mit 5 unterschiedlichen postleitzahlen
 2. jede postleitzahl bekommt eine gefahrenstufe zugewiesen
 3. variable für anzahl der polizisten erstellen
-4. variable erstellen, zufällig wird ausgegeben, wieviele polizisten krank und wie viele verfügbar sind. 
-5. anzahl an polizisten werden zugeteilt zu bestimmten plz je nachdem wie gefährlich es ist
-6. wenn man "location" eingibt, wird ausgegeben, wo welcher polizist gerade ist
+
+Jan: variable erstellen, zufällig wird ausgegeben, wieviele polizisten krank und wie viele verfügbar sind.
+ 
+Adrian: anzahl an polizisten werden zugeteilt zu bestimmten plz je nachdem wie gefährlich es ist
+
+Adam: wenn man "location" eingibt, wird ausgegeben, wo welcher polizist gerade ist
 
 erweiterung 1: am ende können polizisten ihre kollegen bewerten
 
