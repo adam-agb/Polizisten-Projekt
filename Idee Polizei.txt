@@ -59,3 +59,29 @@ buerger_bewertungen = {
     "10555": [],
     "10999": []
 }
+
+
+def buerger_bewertung_abgeben():
+    plz = input("PLZ: ")
+    if plz not in buerger_bewertungen:
+        print("Unbekannte PLZ.")
+        return
+    bewertung = input("Wie sicher fuehlen Sie sich in diesem Gebiet (1 = unsicher, 10 = sehr sicher)? ")
+    if bewertung.isdigit():
+        bewertung = int(bewertung)
+        if 1 <= bewertung <= 10:
+            buerger_bewertungen[plz].append(bewertung)
+            print("Danke fuer Ihre Bewertung.")
+        else:
+            print("Bewertung muss zwischen 1 und 10 liegen.")
+    else:
+        print("Bitte geben Sie eine Zahl ein.")
+        
+def gefahr_aus_buergermeinung():
+    for plz, bewertungen in buerger_bewertungen.items():
+        if len(bewertungen) > 0:
+            durchschnitt = sum(bewertungen) / len(bewertungen)
+            # Umrechnung: Niedrige Bewertung = hohe Gefahr
+            neue_stufe = round(10 - durchschnitt)
+            plz_gefahrliste[plz] = neue_stufe
+            print(f"Gefahrenstufe fuer {plz} basierend auf Buergermeinung: {neue_stufe}")
